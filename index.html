@@ -143,7 +143,7 @@
             clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
         }
         
-        //* Media Queries für verschiedene Geräte */
+        /* Media Query für Handys */
         @media only screen and (max-width: 600px) {
             /* Stile für Geräte mit einer maximalen Bildschirmbreite von 600px (z. B. Smartphones) */
             .content, .profile-pic {
@@ -152,13 +152,14 @@
             }
         }
 
+        /* Media Query für Tablets */
         @media only screen and (min-width: 601px) and (max-width: 1024px) {
             /* Stile für Geräte mit einer Bildschirmbreite zwischen 601px und 1024px (z. B. Tablets) */
             .content, .profile-pic {
-                flex-basis: 100%;
+                flex-basis: 50%;
+                padding: 20px; /* Zusätzlicher Platz für Tablet-Bildschirme */
             }
         }
-
 
         
 
